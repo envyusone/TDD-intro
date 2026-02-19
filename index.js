@@ -12,7 +12,13 @@
  * sumDouble(5, 5); // 20
  */
 export function sumDouble(num1, num2) {
-  /* TODO */
+  let sum = num1 + num2;
+
+  if (num1 === num2) {
+    return sum * 2;
+  }
+
+  return sum;
 }
 
 /**
@@ -28,7 +34,7 @@ export function sumDouble(num1, num2) {
  * makes10(4, 4); // false
  */
 export function makes10(num1, num2) {
-  /* TODO */
+  return num1 === 10 || num2 === 10 || (num1 + num2) === 10;
 }
 
 /**
@@ -46,7 +52,8 @@ export function makes10(num1, num2) {
  * near100(105, 10); // true
  */
 export function near100(n, distance) {
-  /* TODO */
+  let difference = Math.abs(100 - n);
+  return difference <= distance;
 }
 
 /**
@@ -63,7 +70,7 @@ export function near100(n, distance) {
  * isMultiple35(7); // false
  */
 export function isMultiple35(n) {
-  /* TODO */
+  return n % 3 === 0 || n % 5 === 0;
 }
 
 /**
@@ -81,7 +88,7 @@ export function isMultiple35(n) {
  * shareLastDigit(10, 21); // false
  */
 export function shareLastDigit(num1, num2) {
-  /* TODO */
+  return (num1 % 10) === (num2 % 10);
 }
 
 /**
@@ -98,7 +105,7 @@ export function shareLastDigit(num1, num2) {
  * isColdAndHot(10, 50); // false
  */
 export function isColdAndHot(temp1, temp2) {
-  /* TODO */
+  return (temp1 < 0 && temp2 > 100) || (temp2 < 0 && temp1 > 100);
 }
 
 /**
@@ -114,7 +121,7 @@ export function isColdAndHot(temp1, temp2) {
  * makeABBA("a", "b"); // "abba"
  */
 export function makeABBA(A, B) {
-  /* TODO */
+  return A + B + B + A;
 }
 
 /**
